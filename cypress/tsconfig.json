@@ -3,7 +3,12 @@
     "compilerOptions": {
       "target": "es5",
       "lib": ["es5", "dom"],
-      "types": ["cypress", "node"]
+      "types": ["cypress", "node"],
+      "isolatedModules": false,
+      "noEmit": true,
+      "composite": true,
+      "jsx": "react-jsx",
+      "strict": true
     },
-    "include": ["**/*.ts"]
+    "include": ["**/*.tsx", "**/*.ts", "**/*.js", "**/*.jsx", "../client/src/components/Quiz.tsx"]
 }
